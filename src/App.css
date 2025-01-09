@@ -1,0 +1,263 @@
+/* Styling the header section */
+.header {
+  padding-left: 5%;
+  color: green;
+  display: flex;
+  justify-content: space-between; /* Ensures space between title and navigation */
+  align-items: center;
+}
+
+.port {
+  font-size: 2rem;
+}
+
+/* Styling the navigation links */
+.nav-links {
+  list-style: none; /* Removes bullet points */
+  display: flex;    /* Display links in a row */
+  gap: 20px;        /* Adds space between links */
+  padding: 0;
+}
+
+.nav-links li {
+  font-size: 1.2rem;
+}
+
+.nav-links a {
+  text-decoration: none;  /* Removes underline */
+  color: green;           /* Green text color */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.nav-links a:hover {
+  color: rgb(121, 34, 8);       /* Change color on hover */
+}
+
+/* Profile section with image and about me text */
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  background-color: rgb(227, 230, 230);
+  border-radius: 50px;
+  padding: 20px;
+}
+
+.profile-pic {
+  width: 350px;          /* Adjust size as needed */
+  height: 500px;         /* Maintain height */
+  border-radius: 40%;    /* Rounded corners */
+  object-fit: cover;
+  gap: 60px;     /* Ensures the image fills the space without distortion */
+}
+.projects-aligncenter{
+  align-items: end;
+}
+.aboutme {
+  font-size: 1.2rem;
+  margin: 0;
+  line-height: 1.5;
+  max-width: 600px;  /* Optional: Add max-width for better text alignment */
+}
+
+/* Add hover effect on the profile picture */
+.profile-pic:hover {
+  transform: scale(1.05); /* Slightly enlarge image on hover */
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+.projectdiv{
+  align-content:start;
+  background-color: white;
+  padding:10%;
+  border-radius: 10%;
+  border-color:black;
+  border-width: 2px;
+  background-color: aliceblue;
+
+}
+.nav-l {
+  
+  list-style: none; /* Removes bullet points */
+  display: flex;    /* Display links in a row */
+  gap: 200px;        /* Adds space between links */
+  padding: 0;
+  
+}
+
+.nav-l li {
+  font-size: 1.2rem;
+}
+
+.nav-l a {
+  text-decoration: none;  /* Removes underline */
+  color: rgb(25, 14, 12);           /* Green text color */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.nav-l a:hover {
+  color: rgb(8, 0, 85);       /* Change color on hover */
+}
+.projects-aligncenter {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 2rem; /* Adjust the font size as needed */
+  color: #333; /* Adjust the color as needed */
+}
+
+
+.nav-l li,.social,.bank,.machine{
+  background-color: antiquewhite;
+  height: 200px;
+  width: 200px;
+  align-content:center;
+  justify-content: center;
+  border-radius: 30px;
+  gap: 30px;
+}
+
+.nav-l li:hover,.social:hover,.bank:hover,.machine:hover{
+  transform: scale(1.05); /* Slightly enlarge image on hover */
+  transition: transform 0.3s ease; 
+  background-color: rgb(225, 223, 236);
+  border-radius: 50%;
+}
+/* Base styles (default for larger screens like desktops) */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Default desktop styles */
+.container,
+.profile-section,
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Adjust styles for tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+  .profile-section {
+    flex-direction: column; /* Stack image and text vertically */
+    gap: 20px;
+    text-align: center;
+  }
+
+  .profile-pic {
+    width: 250px;
+    height: 350px;
+  }
+
+  .aboutme {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+
+  .contact-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+/* Adjust styles for phones (max-width: 768px) */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Stack title and navigation vertically */
+    padding: 10px;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-direction: column; /* Stack navigation links vertically */
+    gap: 10px;
+  }
+
+  .profile-section {
+    gap: 10px;
+  }
+
+  .profile-pic {
+    width: 150px;
+    height: 200px;
+    border-radius: 20%; /* Reduce border radius for smaller screens */
+  }
+
+  .aboutme {
+    font-size: 0.9rem;
+  }
+
+  .contact-container {
+    padding: 20px;
+  }
+
+  .contact-title {
+    font-size: 1.5rem;
+  }
+
+  .contact-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .form-input, 
+  .form-textarea {
+    font-size: 14px;
+  }
+
+  .form-button {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
+
+/* Adjust styles for smaller phones (max-width: 480px) */
+@media (max-width: 480px) {
+  .profile-pic {
+    width: 120px;
+    height: 160px;
+  }
+
+  .aboutme {
+    font-size: 0.8rem;
+    line-height: 1.3;
+  }
+
+  .nav-links {
+    gap: 5px;
+  }
+
+  .nav-links li {
+    font-size: 1rem;
+  }
+
+  .download-button {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  .contact-title {
+    font-size: 1.2rem;
+  }
+
+  .form-input,
+  .form-textarea {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .form-button {
+    font-size: 12px;
+  }
+
+  .info-title {
+    font-size: 1.2rem;
+  }
+
+  .info-text {
+    font-size: 0.9rem;
+  }
+}
+.smooth-section{
+  scroll-behavior: smooth;
+}

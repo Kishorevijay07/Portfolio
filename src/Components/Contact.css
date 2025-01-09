@@ -1,0 +1,100 @@
+/* Container styling */
+.contact-container {
+    padding: 50px;
+    background-color: #f8f9fa;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .contact-title {
+    font-size: 2rem;
+    color: #333;
+    border-bottom: 3px solid #9b1342;
+    display: inline-block;
+    margin-bottom: 30px;
+  }
+  .icon{
+    height:17px;
+    width:17px;
+    gap: 20px;
+    padding: auto;
+  }
+  /* Layout for form and info sections */
+  .contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .contact-form, .contact-info {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form styling */
+  .form-input, .form-textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  .form-textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  .form-button {
+    background-color: #93193c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .form-button:hover {
+    background-color: #85919d;
+  }
+  
+  /* Info styling */
+  .info-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+    border-bottom: 3px solid #76114f;
+    display: inline-block;
+  }
+  
+  .info-text, .info-location, .info-phone, .info-email {
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 16px;
+  }
+  
+  .social-icons {
+    margin-top: 20px;
+  }
+  
+  .icon {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 20px;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .icon:hover {
+    color: #0056b3;
+  }
+  html {
+    scroll-behavior: smooth;  /* Enable smooth scrolling globally */
+  }
+  
