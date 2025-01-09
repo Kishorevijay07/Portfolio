@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.bef88862.css",
+    "main.js": "/Portfolio/static/js/main.e48cdd66.js",
+    "static/media/Kishore-photo.jpg": "/Portfolio/static/media/Kishore-photo.106e234042de05f7089b.jpg",
+    "static/media/Kishore-resume.jpeg": "/Portfolio/static/media/Kishore-resume.5630d85a7a6e7bb48d4d.jpeg",
+    "static/media/social-image.jpeg": "/Portfolio/static/media/social-image.603b76f23f5a45db963d.jpeg",
+    "static/media/machine-image.jpeg": "/Portfolio/static/media/machine-image.eafb26dfa8f5268e2f8d.jpeg",
+    "index.html": "/Portfolio/index.html",
+    "main.bef88862.css.map": "/Portfolio/static/css/main.bef88862.css.map",
+    "main.e48cdd66.js.map": "/Portfolio/static/js/main.e48cdd66.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bef88862.css",
+    "static/js/main.e48cdd66.js"
+  ]
+}
