@@ -2,6 +2,7 @@ import React from 'react'
 import bank from './../images/bank-image.jpeg';
 import social from './../images/social-image.jpeg';
 import machine from './../images/machine-image.jpeg';
+import './project.css';
 
 
 const Projects = () => {
