@@ -1,114 +1,140 @@
-/* General Styles */
+/* General Styling */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #f4f4f9;
-    color: #333;
-  }
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  box-sizing: border-box;
+}
+
+/* Section Styling */
+#projects {
+  text-align: center;
+  padding: 0px;
+  background: #007bff;
+  color: white;
+}
+
+.projects-aligncenter {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+/* Container for the list */
+.projectdiv {
+  display: flex;
+  flex-wrap: wrap;             
+  justify-content: center;     
+  align-items: stretch;        
+  gap: 30px;                    
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Project List Styling */
+.nav-l {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;              
+  justify-content: center; 
+}
+
+/* Individual Project Item with Scroll Animation */
+.nav-l li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease, box-shadow 0.5s ease, opacity 0.8s ease;
+  padding: 25px;
+  width: 350px;                 
+  height: auto;                 
+  box-sizing: border-box;
+  text-align: center;
+  overflow: hidden;
   
-  /* Section Styles */
-  #projects {
-    text-align: center;
-    padding: 2rem 1rem;
-    background-color: #4a90e2;
-    color: white;
-  }
-  
-  #projects h1 {
-    font-size: 2.5rem;
-    margin: 0;
-  }
-  
-  /* Projects Container */
+  /* Scroll animation effect */
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s, transform 0.8s;
+}
+
+/* Trigger animation when visible */
+.nav-l li.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.nav-l li:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styling */
+.nav-l img {
+  width: 100%;
+  max-width: 320px;             
+  height: 200px;                 
+  object-fit: cover;             
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.nav-l img:hover {
+  transform: scale(1.05);
+}
+
+/* Project Info (Text and Links) */
+.nav-l a {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: color 0.3s;
+}
+
+.nav-l a:hover {
+  color: #007bff;
+}
+
+/* Project Title */
+.nav-l a span {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 15px 0 8px;
+}
+
+/* Description Styling */
+.project-description {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 8px;
+  line-height: 1.6;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 1024px) {
   .projectdiv {
-    display: flex;
-    justify-content: center;
-    padding: 2rem;
-    gap: 1.5rem;
-    flex-wrap: wrap;
+    padding: 20px 15px;
   }
-  
-  /* List Styles */
-  .nav-l {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-  }
-  
   .nav-l li {
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: 100%;
+    max-width: 90%;
   }
-  
-  .nav-l li:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .nav-l li {
+    width: 100%;
+    max-width: 90%;
   }
-  
-  .nav-l a {
-    text-decoration: none;
-    color: #333;
-    display: flex;
-    align-items: center;
-    padding: 1rem;
-  }
-  
-  .nav-l a:hover {
-    color: #4a90e2;
-  }
-  
-  /* Image Styles */
-  .nav-l img {
-    width: 50px;
-    height: 50px;
-    border-radius: 8px;
-    margin-right: 1rem;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .projectdiv {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .nav-l {
-      flex-direction: column;
-      gap: 0;
-    }
-  
-    #projects h1 {
-      font-size: 2rem;
-    }
-  
-    .nav-l li {
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-  
-    .nav-l li:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-  
-    .nav-l a {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .nav-l a:hover {
-      color: #4a90e2;
-    }
-  
-    .nav-l img {
-      margin: 0 0 0.5rem 0;
-    }
-  }
+}

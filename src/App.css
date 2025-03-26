@@ -48,11 +48,8 @@
   height: 500px;         /* Maintain height */
   border-radius: 40%;    /* Rounded corners */
   object-fit: cover;
-  gap: 60px;     /* Ensures the image fills the space without distortion */
 }
-.projects-aligncenter{
-  align-items: end;
-}
+
 .aboutme {
   font-size: 1.2rem;
   margin: 0;
@@ -65,23 +62,13 @@
   transform: scale(1.05); /* Slightly enlarge image on hover */
   transition: transform 0.3s ease; /* Smooth transition for scaling */
 }
-.projectdiv{
-  align-content:start;
-  background-color: white;
-  padding:10%;
-  border-radius: 10%;
-  border-color:black;
-  border-width: 2px;
-  background-color: aliceblue;
 
-}
+/* Navigation box styles */
 .nav-l {
-  
   list-style: none; /* Removes bullet points */
   display: flex;    /* Display links in a row */
-  gap: 200px;        /* Adds space between links */
+  gap: 200px;       /* Adds space between links */
   padding: 0;
-  
 }
 
 .nav-l li {
@@ -89,44 +76,15 @@
 }
 
 .nav-l a {
-  text-decoration: none;  /* Removes underline */
-  color: rgb(25, 14, 12);           /* Green text color */
+  text-decoration: none; /* Removes underline */
+  color: rgb(25, 14, 12); /* Text color */
   transition: color 0.3s ease; /* Smooth transition for color change */
 }
 
 .nav-l a:hover {
-  color: rgb(8, 0, 85);       /* Change color on hover */
-}
-.projects-aligncenter {
-  text-align: center;
-  margin: 0 auto;
-  font-size: 2rem; /* Adjust the font size as needed */
-  color: #333; /* Adjust the color as needed */
+  color: rgb(8, 0, 85); /* Change color on hover */
 }
 
-
-.nav-l li,.social,.bank,.machine{
-  background-color: antiquewhite;
-  height: 200px;
-  width: 200px;
-  align-content:center;
-  justify-content: center;
-  border-radius: 30px;
-  gap: 30px;
-}
-
-.nav-l li:hover,.social:hover,.bank:hover,.machine:hover{
-  transform: scale(1.05); /* Slightly enlarge image on hover */
-  transition: transform 0.3s ease; 
-  background-color: rgb(225, 223, 236);
-  border-radius: 50%;
-}
-/* Base styles (default for larger screens like desktops) */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
 
 /* Default desktop styles */
 .container,
@@ -200,7 +158,7 @@ body {
     gap: 20px;
   }
 
-  .form-input, 
+  .form-input,
   .form-textarea {
     font-size: 14px;
   }
@@ -258,82 +216,7 @@ body {
     font-size: 0.9rem;
   }
 }
-.smooth-section{
+
+.smooth-section {
   scroll-behavior: smooth;
-}
-/* Global Styles */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
-
-/* Alignment for the projects */
-.projects-aligncenter {
-  text-align: center;
-  margin: 0 auto;
-  font-size: 2rem;
-  color: #333;
-}
-
-/* Container Styles */
-.nav-l li,
-.social,
-.bank,
-.machine {
-  background-color: antiquewhite;
-  height: 200px;
-  width: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 30px;
-  gap: 30px;
-  margin: 10px;
-  transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.nav-l li:hover,
-.social:hover,
-.bank:hover,
-.machine:hover {
-  transform: scale(1.05);
-  background-color: rgb(225, 223, 236);
-  border-radius: 50%;
-}
-
-/* Responsive Design */
-
-/* Mobile View */
-@media (max-width: 768px) {
-  .projects-aligncenter {
-    font-size: 1.5rem; /* Smaller font size for smaller screens */
-  }
-
-  .nav-l li,
-  .social,
-  .bank,
-  .machine {
-    height: 150px; /* Smaller boxes for mobile */
-    width: 150px;
-    border-radius: 20px; /* Adjust border radius for smaller boxes */
-    gap: 20px;
-  }
-}
-
-/* Desktop View */
-@media (min-width: 769px) {
-  .projects-aligncenter {
-    font-size: 2.5rem; /* Larger font size for desktop */
-  }
-
-  .nav-l li,
-  .social,
-  .bank,
-  .machine {
-    height: 250px; /* Larger boxes for desktop */
-    width: 250px;
-    border-radius: 40px; /* Adjust border radius for larger boxes */
-    gap: 40px;
-  }
 }

@@ -16,7 +16,7 @@ const Contact = () => {
         {/* Left Section - Form */}
         <div className="contact-form">
   <div className="education">
-    <h2 className="info-location"><a href='https://www.annauniv.edu/'>MSc Information Technology, Anna University</a></h2>
+    <h2 className="info-location"><a href='https://www.annauniv.edu/'>M.Sc Integrated Information Technology, Anna University</a></h2>
     <p>📍 Chennai, Tamil Nadu, IN</p>
   </div>
   

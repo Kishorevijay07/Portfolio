@@ -1,71 +1,154 @@
-/* Main container for both sections */
-.skill-classdiv, .coding-skills-div {
-    display: inline-block; /* Makes the sections display side by side */
-    width: 45%; /* Adjust width of each section */
-    margin: 10px; /* Space between sections */
-    vertical-align: top; /* Aligns both sections to the top */
-  }
-  ul{
-    list-style-type: none;
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  box-sizing: border-box;
+}
+
+/* Skills Section Styling */
+.coding-skills-div {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+  margin: 40px auto;
+  max-width: 1100px;
+  transition: transform 0.5s ease, opacity 0.8s ease;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s, transform 0.8s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* Center alignment */
+  justify-content: center;  /* Vertical centering */
+  text-align: center;
+}
+
+/* Scroll Animation */
+.coding-skills-div.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Header Styling */
+h2 {
+  font-size: 2.5rem;
+  color: #007bff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Centered List Styling */
+.skills-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;   /* Center alignment */
+  align-items: center;       /* Vertical centering */
+  gap: 25px;
+  width: 100%;
+}
+
+/* Individual Skill Item Styling */
+.skills-ul li {
+  background: linear-gradient(135deg, #f0f0f0, #ffffff);
+  color: #333;
+  padding: 20px 35px;
+  border-radius: 12px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+  min-width: 220px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+/* Hover Effects with Colors */
+.skills-ul li:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+/* Apply Color Scheme to All Lists */
+.skills-ul li:nth-child(1) {
+  background: #61DBFB;     /* React color */
+}
+.skills-ul li:nth-child(2) {
+  background: #68A063;     /* Node color */
+}
+.skills-ul li:nth-child(3) {
+  background: #000;        /* Express color */
+}
+.skills-ul li:nth-child(4) {
+  background: #4DB33D;     /* Mongo color */
+}
+.skills-ul li:nth-child(5) {
+  background: #FF5733;     /* MySQL color */
+}
+.skills-ul li:nth-child(6) {
+  background: #E44D26;     /* HTML color */
+}
+.skills-ul li:nth-child(7) {
+  background: #264de4;     /* CSS color */
+}
+
+/* Coding Skills */
+.coding-skills-div:nth-of-type(2) .skills-ul li:nth-child(1) {
+  background: #f7df1e;      /* Python color */
+  color: #333;
+}
+.coding-skills-div:nth-of-type(2) .skills-ul li:nth-child(2) {
+  background: #007bff;      /* C color */
+  color: #fff;
+}
+.coding-skills-div:nth-of-type(2) .skills-ul li:nth-child(3) {
+  background: #f34f29;      /* Java color */
+  color: #fff;
+}
+
+/* Other Skills */
+.coding-skills-div:nth-of-type(3) .skills-ul li:nth-child(1) {
+  background: #6a1b9a;      /* Purple for Problem Solving */
+  color: #fff;
+}
+.coding-skills-div:nth-of-type(3) .skills-ul li:nth-child(2) {
+  background: #ff9800;      /* Orange for DSA */
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .coding-skills-div {
+    padding: 35px;
   }
 
-  /* Styling for Web Development section */
-  .skills-ul {
-    list-style-type: none;
-    padding: 0;
+  .skills-ul li {
+    min-width: 180px;
   }
-  
-  .skills-ul > li {
-    padding: 15px;
-    text-align: center;
-    border: 1px solid #bb2b2b;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9;
-    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+@media (max-width: 768px) {
+  .skills-ul li {
+    min-width: 150px;
+    font-size: 1.2rem;
+    padding: 15px 25px;
   }
-  
-  .skills-ul > li:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Styling for Coding Skills section */
-  .coding-skills-div ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .coding-skills-div ul li {
-    padding: 15px;
-    text-align: center;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9;
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-  
-  .coding-skills-div ul li:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Styling for the main headings */
-  h1, h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 1.5rem;
-    color: #333;
-  }
-  
-  /* Responsive design for smaller screens */
-  @media (max-width: 768px) {
-    .skill-classdiv, .coding-skills-div {
-      width: 100%; /* Make sections stack vertically on medium screens */
-    }
-  }
-a{
+}
+
+/* Link Styling */
+a {
   text-decoration: none;
-  color:black;
+  color: #007bff;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #0056b3;
 }
