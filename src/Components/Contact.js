@@ -40,7 +40,7 @@ const Contact = () => {
           </p>
           <p className="info-location">📍 Chennai, Tamil Nadu IN</p>
           <p className="info-phone">📞 ##########</p>
-          <p className="info-email"><a href="mailto:example@example.com">✉️ kishorevijay978@gmail.com</a></p>
+          <p className="info-email"><a href="mailto:kishore.tech.codes@gmail.com">✉️ kishore.tech.codes@gmail.com</a></p>
           <div className="social-icons">
                      <a href='https://www.instagram.com/kishore_s07/' target='_blank' rel='noopener noreferrer'>
                        <img className='icon' src={instagram} alt='inta logo' />

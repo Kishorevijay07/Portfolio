@@ -28,7 +28,7 @@ const Projects = () => {
       <p>Tech Stack: React.js, Node.js, Express.js, MongoDB, Cloudinary</p>
     </li> 
     <li>
-      <a href='https://github.com/Kishorevijay07/X-twitter--Clone' target='_blank' rel='noopener noreferrer'>
+      <a href='https://github.com/Kishorevijay07/Attendance-Backend' target='_blank' rel='noopener noreferrer'>
         <img className='attendance' src={attendance} alt='Attendance '/>
         &nbsp;Attendace Management For College(Ongoing)
       </a>
@@ -42,7 +42,7 @@ const Projects = () => {
       <p>Tech Stack : React.js</p>
     </li> 
     <li>
-      <a href='https://github.com/Kishorevijay07/Book-selling-prediction-Machine-learning' target='_blank' rel='noopener noreferrer'>
+      <a href='https://github.com/Kishorevijay07/Food-delivery-time-Prediction' target='_blank' rel='noopener noreferrer'>
         <img className='machine' src={food_delivery} alt='Machine learning' />
         &nbsp;Food Delivery Time Prediction (ML)
       </a>
@@ -55,9 +55,10 @@ const Projects = () => {
         <img className='machine' src={machine} alt='Machine learning' />
         &nbsp;Best selling Book Prediction (ML)
       </a>
+      <p>Tech : Python</p>
     </li>
     <li>
-      <a href='https://github.com/Kishorevijay07/Book-selling-prediction-Machine-learning' target='_blank' rel='noopener noreferrer'>
+      <a href='https://github.com/Kishorevijay07/Huffman_EnCoding' target='_blank' rel='noopener noreferrer'>
         <img className='machine' src={huffman} alt='huffman' />
         &nbsp;Huffman Encoding and Decoding
       </a>
